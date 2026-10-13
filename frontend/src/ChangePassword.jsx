@@ -34,7 +34,7 @@ const handleSubmit = (e) => {
     const email = localStorage.getItem("email");
 
   axios.post(
-    `http://localhost:3000/user/change-password/${encodeURIComponent(email)}`,
+    `https://frontend-10oct.onrender.com/user/change-password/${encodeURIComponent(email)}`,
     {
       newPassword: password,
       confirmPassword: confirmPassword
