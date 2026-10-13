@@ -31,7 +31,7 @@ function ForgotPassword() {
     const handleSubmit = (e) => {
         e.preventDefault();
           setLoading(true);
-        axios.post("http://localhost:3000/user/forgot-password", {
+        axios.post("https://frontend-10oct.onrender.com/user/forgot-password", {
 
             email: email
         })
